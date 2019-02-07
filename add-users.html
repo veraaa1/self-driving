@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>添加常用游客</title>
+  <link rel="stylesheet" href="css/add-users.css">
+</head>
+<body>
+  <header>
+    <div class="top">
+      <div class="top-inner">
+        <a href="javascript:history.back(-1)">
+          <div class="return">
+            <img src="images/self-driving-details/return.jpg" alt="">
+          </div>
+        </a>
+        <p>添加常用游客</p>
+        <a href="#">保存</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <form action="">
+      <ul>
+        <li><span>姓名</span><input type="text" value="必填" onFocus="if(value=='必填') {value=''}" onBlur="if(value==''){value='必填'}"></li>
+        <li><span>证件类型</span><input type="text" value="暂无证件" onFocus="if(value=='暂无证件') {value=''}" onBlur="if(value==''){value='暂无证件'}"> <img src="images/add-users/right-pot.jpg" alt=""></li>
+        <li><span>手机</span><input type="text" value="选填" onFocus="if(value=='选填') {value=''}" onBlur="if(value==''){value='选填'}"></li>
+      </ul>
+    </form>
+  </main>
+ <script>
+  // 根据屏幕的宽度和设计稿的尺寸动态设置 html 的 font-size    以下设计稿的尺寸为 640  6.4rem 相当于屏幕的宽度
+  document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + 'px';
+</script>
+</body>
+</html>

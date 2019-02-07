@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>选择常用游客</title>
+  <link rel="stylesheet" href="css/choose-users.css">
+</head>
+<body>
+  <header>
+    <div class="top">
+      <div class="top-inner">
+        <a href="javascript:history.back(-1)">
+          <div class="return">
+            <img src="images/self-driving-details/return.jpg" alt="">
+          </div>
+        </a>
+        <p>添加常用游客</p>
+        <a href="#">确定</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <form action="" method="post">
+      <ul>
+        <li>
+          <span>已选择<span>0</span>/2旅客</span>
+        </li>
+        <li><img src="images/choose-user/edit.jpg" alt=""><label for="user-1">罗小小</label><input type="checkbox" name="user" value="罗小小" id="user-1"></li>
+        <li><img src="images/choose-user/edit.jpg" alt=""><label for="user-2">罗笑笑</label><input type="checkbox" name="user" value="罗笑笑"id="user-2"></li>
+        <li><img src="images/choose-user/edit.jpg" alt=""><label for="user-3">罗晓晓</label><input type="checkbox" name="user" value="罗晓晓" id="user-3"></li>
+      </ul>
+    </form>
+    
+  </main>
+<script>
+  // 根据屏幕的宽度和设计稿的尺寸动态设置 html 的 font-size    以下设计稿的尺寸为 640  6.4rem 相当于屏幕的宽度
+  document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + 'px';
+</script>
+</body>
+</html>

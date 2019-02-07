@@ -1,0 +1,30 @@
+*{margin: 0;padding: 0;}
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   color: #fff;
+   fill: currentColor;
+   overflow: hidden;
+}
+a{
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+-webkit-user-select: none;
+-moz-user-focus: none;
+-moz-user-select: none;
+}
+/*header样式*/
+header{width: 6.4rem;position: relative;}
+.top{width: 6.4rem;height: 0.88rem;background-color: #50bbdb;}
+.top-inner{width: 6.2rem;margin: 0 auto;overflow: hidden;display: flex;justify-content: flex-start;clear: both;}
+.top-inner>a{width: 0.44rem;height: 0.44rem;display:block;text-decoration: none;margin-top: 0.23rem;}
+.top-inner>a>.return{width: 0.44rem;height: 0.44rem;}
+.top-inner>a>.return>img{width: 100%;display: block;}
+.top-inner>p{width:1.46rem;color:#fff;font-size: 0.25rem;margin: 0 auto;margin-top: 0.31rem;}
+header>p{width: 100%;height: 0.68rem;text-align: center;line-height: 0.68rem;background-color: #ebebeb;font-size:0.21rem; }
+/*main样式*/
+main{width: 6.4rem;}
+.main-inner{width: 5.50rem;margin: 0 auto;margin-top: 0.19rem;padding-bottom: 0.40rem;}
+.main-inner>div{width: 100%;display: flex;justify-content: flex-start;}
+.main-inner>div>img{display: block;width: 1.45rem;height: 1.47rem;}
+.main-inner>div>h3{width: 2.96rem;font-size: 0.27rem;font-weight: normal;margin-left: 0.51rem;margin-top: 0.6rem;border-bottom: 1px dashed #d5d5d5;height: 0.43rem;}
+.main-inner>p{width: 100%;font-size: 0.20rem;line-height: 0.40rem;margin: 0 auto; border: 1px dashed #d5d5d5;padding:0.25rem 0.08rem 0.38rem 0.08rem;margin-top: 0.24rem;}

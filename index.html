@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Document</title>
+  <script src="fonts/ali-font/iconfont.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header>
+  <div class="top">
+    <div class="top-inner">
+      <a href="javascript:history.back(-1)" class="locate">
+        <svg class="icon-locate icon" aria-hidden="true">
+          <use xlink:href="#icon-dingwei"></use>
+        </svg>
+      </a>
+      <a href="#" class="place">呼和浩特</a>
+      <div class="catalogue">
+        <a href="#">爱自驾</a>
+        <a href="#">互动</a>
+        <img src="images/tip.jpg" alt="">
+      </div>
+      <a href="#" class="locate camera icon">
+        <svg class="icon-locate" aria-hidden="true">
+          <use xlink:href="#icon-LC_icon_camera_fill"></use>
+        </svg>
+      </a>
+    </div> 
+  </div>
+  <div class="banner">
+    <img src="images/banner.jpg" alt="">
+    <input type="search" name="" id="explore">
+    <a href="search-result.html" class="search-button">
+      <svg class="icon-fangda icon" aria-hidden="true">
+        <use xlink:href="#icon-search"></use>
+      </svg>
+    </a>
+    <p>自驾团陪你畅游世界</p>
+  </div>
+  </header>
+  <main>
+    <div class="main-top">
+      <a href="javascript:;" class="all">全部</a>
+      <a href="javascript:;" class="inner-travel">境内</a>
+      <a href="javascript:;" class="out-travel">境外</a>
+    </div>
+    <div class="main-bottom">
+      <ul>
+        <li class="line" onclick="window.location.href='self-drivingroup-detail.html'">
+          <div class="mengban"></div>
+          <p>小资圣地五日自驾游泸沽湖</p>
+          <img src="images/choose-line.jpg" alt="">
+          <div class="mengban2"></div>
+          <p>线路：旧金山—文图拉—洛杉矶—檀香山</p>
+          <div class="price"><span>￥<span>5280</span>元起</span></div>
+        </li>
+        <li class="line">
+          <div class="mengban"></div>
+          <p>小资圣地五日自驾游泸沽湖</p>
+          <img src="images/line2.jpg" alt="">
+          <div class="mengban2"></div>
+          <p>线路：旧金山—文图拉—洛杉矶—檀香山</p>
+          <div class="price">
+            <span>￥<span>5280</span>元起</span>
+          </div>
+        </li>
+        <li class="line">
+          <div class="mengban"></div>
+          <p>小资圣地五日自驾游泸沽湖</p>
+          <img src="images/line3.jpg" alt="">
+          <div class="mengban2"></div>
+          <p>线路：旧金山—文图拉—洛杉矶—檀香山</p>
+          <div class="price">
+            <span>￥<span>5280</span>元起</span>
+          </div>
+        </li>
+        <li class="line">
+          <div class="mengban"></div>
+          <p>小资圣地五日自驾游泸沽湖</p>
+          <img src="images/choose-line.jpg" alt="">
+          <div class="mengban2"></div>
+          <p>线路：旧金山—文图拉—洛杉矶—檀香山</p>
+          <div class="price"><span>￥<span>5280</span>元起</span></div>
+        </li>
+        <li class="line">
+          <div class="mengban"></div>
+          <p>小资圣地五日自驾游泸沽湖</p>
+          <img src="images/choose-line.jpg" alt="">
+          <div class="mengban2"></div>
+          <p>线路：旧金山—文图拉—洛杉矶—檀香山</p>
+          <div class="price">
+            <span>￥<span>5280</span>元起</span>
+          </div>
+        </li>
+      </ul>
+      <div class="load">
+        <a href="#"><span>加载更多</span>
+          <svg class="icon-load" aria-hidden="true">
+            <use xlink:href="#icon-iconset0425"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <ul>
+      <li>
+        <a href="#" class="footer-nav">
+          <svg class="icon-footer-fix" aria-hidden="true">
+            <use xlink:href="#icon-icons-"></use>
+          </svg>
+        </a>
+        <p>首页</p>
+      </li>
+      <li>
+        <a href="self-driving-detail.html" class="footer-nav">
+          <svg class="icon-footer-fix" aria-hidden="true">
+            <use xlink:href="#icon-paper-plane"></use>
+          </svg>
+        </a>
+        <p>我去</p>
+      </li>
+      <li>
+        <a href="self-drivingroup-detail.html" class="footer-nav">
+          <svg class="icon-footer-fix" aria-hidden="true">
+            <use xlink:href="#icon-ditu"></use>
+          </svg>
+        </a>
+        <p>地图</p>
+      </li>
+      <li>
+        <a href="center.html" class="footer-nav">
+          <svg class="icon-footer-fix" aria-hidden="true">
+            <use xlink:href="#icon-gerenzhongxin"></use>
+          </svg>
+        </a>
+        <p>个人中心</p>
+      </li>
+    </ul>
+  </footer>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script>
+		// 根据屏幕的宽度和设计稿的尺寸动态设置 html 的 font-size    以下设计稿的尺寸为 640  6.4rem 相当于屏幕的宽度
+		document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + 'px';
+    $(".catalogue>a:nth-child(2)").click(function(){
+      $(this).css({"color":"#50bbdb","background-color":"#fff"})
+      $(".catalogue>img").css("left","3.15rem")
+      $(".catalogue>a:nth-child(1)").css({ "color": "#fff", "background-color": "#50bbdb" })
+    })
+    $(".catalogue>a:nth-child(1)").click(function () {
+        $(this).css({ "color": "#50bbdb", "background-color": "#fff" })
+        $(".catalogue>a:nth-child(2)").css({ "color": "#fff", "background-color": "#50bbdb" })
+        $(".catalogue>img").css("left", "1.5rem")
+      })
+      $(".main-top>a").click(function(){
+        $(this).css({"border-color":"#50bbdb","color":"#50bbdb"})
+        $(this).siblings().css({ "border-color": "#cccccc", "color": "#999999" })
+      })
+</script>
+</body>
+</html>

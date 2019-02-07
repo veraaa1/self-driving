@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>订单确认</title>
+  <link rel="stylesheet" href="css/center.css">
+</head>
+
+<body>
+  <header>
+    <div class="top">
+      <div class="top-inner">
+        <a href="javascript:history.back(-1)">
+          <div class="return">
+            <img src="images/self-driving-details/return.jpg" alt="">
+          </div>
+        </a>
+        <p>订单列表</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <ul class="choose-way">
+      <li><a href="javascript:;"><p>全部分类</p>
+      <img src="images/center/tip.jpg" alt="">
+    <img src="images/center/choose.jpg" alt=""></a>
+      <ul>
+        <li><a href="javascript:;">全部分类</a></li>
+        <li><a href="javascript:;">待出行</a></li>
+        <li><a href="javascript:;">待支付</a></li>
+        <li><a href="javascript:;">待评价</a></li>
+        <li><a href="javascript:;">已取消</a></li>
+      </ul>
+    </li>
+      <li><a href="javascript:;"><p>按时间排序</p>
+      <img src="images/center/tip.jpg" alt="">
+    <img src="images/center/choose.jpg" alt=""></a>
+    <ul>
+      <li>
+        <a href="javascript:;">按下单时间排序</a>
+      </li>
+      <li>
+        <a href="javascript:;">按出行时间排序</a>
+      </li>
+    </ul>
+  </li>
+    </ul>
+    <div class="mengban"></div>
+      <ul class="detail">
+        <li>
+          <div class="state">
+            <div>
+              <span>订单号:71905351</span>
+              <span>|待出行</span>
+            </div>
+            <div>
+              <span>预定时间:</span>
+              <span>2018-05-21 12:04:39</span>
+            </div>
+          </div>
+          <div class="travel-name">
+            <p>春节
+              <魅力湘西过大年>湘西年夜饭，北京直飞</p>
+            <p>
+              <span>自驾游 2016-02-07出发</span>
+              <span>￥4580</span>
+            </p>
+          </div>
+          <div class="check">
+            <p>待出行</p>
+            <select name="" id="">
+              <option value="取消">取消</option>
+              <option value="确定">确定</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <div class="state">
+            <div>
+              <span>订单号:71905351</span>
+              <span>|待出行</span>
+            </div>
+            <div>
+              <span>预定时间:</span>
+              <span>2018-05-21 12:04:39</span>
+            </div>
+          </div>
+          <div class="travel-name">
+            <p>春节
+              <魅力湘西过大年>湘西年夜饭，北京直飞</p>
+            <p>
+              <span>自驾游 2016-02-07出发</span>
+              <span>￥4580</span>
+            </p>
+          </div>
+          <div class="check">
+            <p>待出行</p>
+            <select name="" id="">
+              <option value="取消">取消</option>
+              <option value="确定">确定</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <div class="state">
+            <div>
+              <span>订单号:71905351</span>
+              <span>|待出行</span>
+            </div>
+            <div>
+              <span>预定时间:</span>
+              <span>2018-05-21 12:04:39</span>
+            </div>
+          </div>
+          <div class="travel-name">
+            <p>春节
+              <魅力湘西过大年>湘西年夜饭，北京直飞</p>
+            <p>
+              <span>自驾游 2016-02-07出发</span>
+              <span>￥4580</span>
+            </p>
+          </div>
+          <div class="check">
+            <p>待出行</p>
+            <select name="" id="">
+              <option value="取消">取消</option>
+              <option value="确定">确定</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <div class="state">
+            <div>
+              <span>订单号:71905351</span>
+              <span>|待出行</span>
+            </div>
+            <div>
+              <span>预定时间:</span>
+              <span>2018-05-21 12:04:39</span>
+            </div>
+          </div>
+          <div class="travel-name">
+            <p>春节
+              <魅力湘西过大年>湘西年夜饭，北京直飞</p>
+            <p>
+              <span>自驾游 2016-02-07出发</span>
+              <span>￥4580</span>
+            </p>
+          </div>
+          <div class="check">
+            <p>待出行</p>
+            <select name="" id="">
+              <option value="取消">取消</option>
+              <option value="确定">确定</option>
+            </select>
+          </div>
+        </li>
+      </ul>
+
+   
+  </main>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    // 根据屏幕的宽度和设计稿的尺寸动态设置 html 的 font-size    以下设计稿的尺寸为 640  6.4rem 相当于屏幕的宽度
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + 'px';
+    $('.choose-way>li>a').click(function(){
+      $(this).children('img').eq(1).css('display','block')
+      $(this).parent().children('ul').css('display','block')
+      $('.mengban').css('background-color','rgba(0,0,0,0.3)')
+    })
+  </script>
+</body>
+
+</html>

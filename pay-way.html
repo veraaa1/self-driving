@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>订单确认</title>
+  <link rel="stylesheet" href="css/pay-way.css">
+</head>
+
+<body>
+  <header>
+    <div class="top">
+      <div class="top-inner">
+        <a href="javascript:history.back(-1)">
+          <div class="return">
+            <img src="images/self-driving-details/return.jpg" alt="">
+          </div>
+        </a>
+        <p>订单确认</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <p>订单总额：￥5920</p>
+    <div>
+      <ul>
+        <img src="images/pay-way/advice.jpg" alt="">
+        <li>
+          <img src="images/pay-way/zfb.jpg" alt="">
+          <span>支付宝支付</span>
+          <input type="radio" name="choose-way" id="">
+        </li>
+        <li>
+          <img src="images/pay-way/wx.jpg" alt="">
+          <span>微信支付</span>
+          <input type="radio" name="choose-way" id="">
+        </li>
+        <li>
+          <img src="images/pay-way/yl.jpg" alt="">
+          <span>银联支付</span>
+          <input type="radio" name="choose-way" id="">
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <div>
+      <p>支付：￥5920</p>
+      <p>剩余：
+        <span>00：18：44</span>请尽快付款</p>
+    </div>
+    <a href="pay-success.html">付款</a>
+  </footer>
+  <script>
+    // 根据屏幕的宽度和设计稿的尺寸动态设置 html 的 font-size    以下设计稿的尺寸为 640  6.4rem 相当于屏幕的宽度
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + 'px';
+  </script>
+  </body>
+  
+  </html>
